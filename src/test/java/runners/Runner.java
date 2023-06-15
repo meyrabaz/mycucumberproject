@@ -7,6 +7,8 @@ import org.junit.runner.RunWith;
 //        ADDING CONFIGURATIONS
         features = "./src/test/resources/features",//PATH OF FEATURES FOLDER
         glue = "stepdefinitions"//PATH OF STEPDEFINITIONS FOLDER
+
+
 )
 public class Runner {
 }

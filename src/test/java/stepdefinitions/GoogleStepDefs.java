@@ -22,6 +22,7 @@ public class GoogleStepDefs {
 
     }
     @Given("user search for iPhone")
+
     public void user_search_for_i_phone() {
         googlePage.searchBox.sendKeys("iPhone"+ Keys.ENTER);
     }
