@@ -17,17 +17,42 @@ public class GoogleStepDefs {
         try{
             googlePage.popUpAccept.click();//If there is a pop up on google clicking
         }catch (Exception e){
-
         }
-
     }
     @Given("user search for iPhone")
-
     public void user_search_for_i_phone() {
         googlePage.searchBox.sendKeys("iPhone"+ Keys.ENTER);
     }
     @Then("verify the page title contains iPhone")
     public void verify_the_page_title_contains_i_phone() {
         Assert.assertTrue(Driver.getDriver().getTitle().contains("iPhone"));
+    }
+    @Then("close the application")
+    public void close_the_application() {
+        Driver.closeDriver();
+    }
+    @Given("user search for porcelain_tea_pot")
+    public void user_search_for_porcelain_tea_pot() {
+        googlePage.searchBox.sendKeys("porcelain tea pot"+Keys.ENTER);
+    }
+    @Then("verify the page title contains porcelain_tea_pot")
+    public void verify_the_page_title_contains_porcelain_tea_pot() {
+        Assert.assertTrue(Driver.getDriver().getTitle().contains("porcelain tea pot"));
+    }
+    @Given("user navigates to {string}")
+    public void user_navigates_to(String string) {
+        Driver.getDriver().get(string);
+        try{
+            googlePage.popUpAccept.click();//If there is a pop up on google clicking
+        }catch (Exception e){
+        }
+    }
+    @Given("user search for {string}")
+    public void user_search_for(String string) {
+        googlePage.searchBox.sendKeys(string+Keys.ENTER);
+    }
+    @Then("verify the page title contains {string}")
+    public void verify_the_page_title_contains(String string) {
+        Assert.assertTrue(Driver.getDriver().getTitle().contains(string));
     }
 }
