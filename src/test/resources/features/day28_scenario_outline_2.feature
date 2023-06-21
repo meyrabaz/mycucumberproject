@@ -8,6 +8,8 @@ Feature: customer_login
     And user clicks on the login page login button
     Then verify the default page is visible
     Then user logs out the application
+    Then close the application
+
     Examples: test_data
       | email                          | password  |
       | sam.walker@bluerentalcars.com  | c!fas_art |
