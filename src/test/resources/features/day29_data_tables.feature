@@ -1,4 +1,5 @@
 @data_tables
+
 Feature: data_tables
 
   Scenario: TC_01_customer_login_test
