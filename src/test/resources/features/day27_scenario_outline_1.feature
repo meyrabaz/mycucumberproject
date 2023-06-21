@@ -19,5 +19,3 @@ Feature: search_feature
       | iphone            |
       | banana            |
       | porcelain tea pot |
-
-
