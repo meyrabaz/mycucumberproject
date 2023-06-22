@@ -1,4 +1,5 @@
 @failed_test_case
+
 Feature: customer_login_failing_on_purpose
   Scenario Outline: TC01_<PositiveTest>_customer_login_test
     Given user navigates to "https://www.bluerentalcars.com/"
