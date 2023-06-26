@@ -3,6 +3,7 @@ Feature: google search feature - this describe the name of this feature file
 
 #  BACKGROUND : used to run before each Scenario or Scenario Outline
   Background: navigation_google
+
     Given user is on the google home page
 
   Scenario: TC_01_iphone_search - Scenario is used to create test cases
