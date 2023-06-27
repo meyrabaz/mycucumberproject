@@ -8,8 +8,10 @@ Feature: search_feature
     And user search for "<data>"
     Then verify the page title contains "<data>"
     Then close the application
+
 #      Examples must be used with scneario outline
 #      Examples is used to pass data
+
     Examples: test data
       | data              |
       | bmw               |
