@@ -38,7 +38,9 @@ public class EditorHomeworkStepDefs {
 
     @Given("click on create button")
     public void click_on_create_button() {
+
         editorHWPage.createButton.click();
+
         WaitUtils.waitFor(2);
     }
     @Given("search for the first name {string}")
