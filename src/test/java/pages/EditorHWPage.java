@@ -38,7 +38,8 @@ public class EditorHWPage {
     public WebElement nameColumn;
 
 
-
+//    @FindBy(xpath = "(//td[@class='sorting_1'])[1]")
+//    public WebElement nameColumn;
 
 
 }
