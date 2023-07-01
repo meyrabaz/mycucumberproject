@@ -13,6 +13,10 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 import java.util.function.Function;
+
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
 public class ReusableMethods {
     /*HOW DO YOU GET SCREENSHOT?
      * I use getScreenShotAs method to take a screenshot in selenium in my framework
@@ -168,5 +172,14 @@ public class ReusableMethods {
         int optionIndex = 1 + random.nextInt(weblist.size() - 1);
         select.selectByIndex(optionIndex);
         return select.getFirstSelectedOption();
+    }
+
+    //    ADDING FOR VERIFYING IF AN ELEMENT IS DISPLAYED ON THE PAGE
+    public static void verifyElementDisplayed(WebElement element) {
+        try {
+            assertTrue("Element is not visible: " + element, element.isDisplayed());
+        } catch (NoSuchElementException e) {
+            fail("Element is not found: " + element);
+        }
     }
 }
