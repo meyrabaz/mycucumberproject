@@ -13,6 +13,7 @@ public class GoogleStepDefs {
     GooglePage googlePage = new GooglePage();
     @Given("user is on the google home page")
     public void user_is_on_the_google_home_page() {
+
         Driver.getDriver().get(ConfigReader.getProperty("google_url"));
         try{
             googlePage.popUpAccept.click();//If there is a pop up on google clicking
