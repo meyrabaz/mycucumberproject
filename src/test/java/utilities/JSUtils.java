@@ -60,12 +60,14 @@ public class JSUtils {
         String value=js.executeScript("return document.getElementById('"+idOfElement+"').value").toString();
         System.out.println(value);
         return value;
-//        How you get the value of an input box?
+
+//        How you get the value of an input box?...
 //        We can js executor.
-//        How?
-//        I can get the element using js executor, and get teh value of the element.
-//        For example, I can get the element by id, and use value attribute to get the value of in an input
-//        I have to do this, cause getText in this case does not return teh text in an input
-//        EG: getValueByJS("hotelDates")
+//        How?...
+//        I can get the element using js executor, and get teh value of the element...
+//        For example, I can get the element by id, and use value attribute to get the value of in an input.
+//        I have to do this, cause getText in this case does not return teh text in an input.
+//        EG: getValueByJS("hotelDates").
+
     }
 }
