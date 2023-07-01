@@ -7,7 +7,9 @@ Feature: new_user_create
     And click on create button
     And search for the first name "<firstname>"
     Then verify the name field contains the first name "<firstname>"
+
     Examples:
+
       | firstname | lastname | position | startdate  | salary |
       | serdar    | ortac    | QA       | 2023-06-15 | 3000   |
 
