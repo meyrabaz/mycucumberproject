@@ -41,13 +41,17 @@ public class WaitUtils {
             Thread.sleep(seconds*1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
+
         }
     }
     /*
     SELENIUM WAIT REUSABLE METHODS
+
      */
     //    DYNAMIC SELENIUM WAITS:
+
     //===============Explicit Wait==============//
+
     public static WebElement waitForVisibility(WebElement element, int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(timeout));
         return wait.until(ExpectedConditions.visibilityOf(element));
