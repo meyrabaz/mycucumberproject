@@ -15,7 +15,6 @@ Feature: google search feature - this describe the name of this feature file
     Then close the application
 
 
-
   @porcelain_tea_pot
   Scenario: TC_02_porcelain_tea_pot_search
     And user search for porcelain_tea_pot
