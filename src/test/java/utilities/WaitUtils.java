@@ -36,6 +36,7 @@ public class WaitUtils {
     /*   HARD WAIT:
          @param : second
        */
+
     public static void waitFor(int seconds){
         try {
             Thread.sleep(seconds*1000);
