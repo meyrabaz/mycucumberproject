@@ -10,8 +10,11 @@ Feature: new_user_create
 
     Examples:
 
+
+
       | firstname | lastname | position | startdate  | salary |
       | serdar    | ortac    | QA       | 2023-06-15 | 3000   |
+
 
 
 
