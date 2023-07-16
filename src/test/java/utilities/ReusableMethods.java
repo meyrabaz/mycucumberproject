@@ -174,7 +174,7 @@ public class ReusableMethods {
         return select.getFirstSelectedOption();
     }
 
-    //    ADDING FOR VERIFYING IF AN ELEMENT IS DISPLAYED ON THE PAGE
+    //  ...  ADDING FOR VERIFYING IF AN ELEMENT IS DISPLAYED ON THE PAGE
     public static void verifyElementDisplayed(WebElement element) {
         try {
             assertTrue("Element is not visible: " + element, element.isDisplayed());

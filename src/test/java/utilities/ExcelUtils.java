@@ -106,6 +106,7 @@ public class ExcelUtils {
         int column = getColumnsNames().indexOf(columnName);
         setCellData(value, row, column);
 
+
     }
     //this method will return data table as 2d array
     //so we need this format because of data provider.

@@ -54,6 +54,7 @@ public class JSUtils {
     }
     /*
     param : Id of the the element
+
      */
     public static String getValueByJS(String idOfElement){
         JavascriptExecutor js = (JavascriptExecutor)Driver.getDriver();

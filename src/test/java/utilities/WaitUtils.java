@@ -22,7 +22,7 @@ public class WaitUtils {
                     "Timeout waiting for Page Load Request to complete after " + timeout + " seconds");
         }
     }
-    //======Fluent Wait====
+    //======Fluent Wait====  ....
     // params : xpath of teh element , max timeout in seconds, polling in second
     public static WebElement fluentWait(String xpath, int withTimeout, int pollingEvery) {
         FluentWait<WebDriver> wait = new FluentWait<WebDriver>(Driver.getDriver())
